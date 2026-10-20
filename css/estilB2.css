@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+html, body {
+    background-color: #0A0A0F;
+    font-family: "EB Garamond", serif;
+}
+
+p, li, label {
+    color: #BFBEBD;
+}
+
+h1, h2 {
+    color: #F2F0EC;
+}
+
+
+
+main {
+    audio {
+        color-scheme: dark;
+    }
+
+    .imatges {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        max-width: 500px;
+    }
+
+    .imatges img {
+        width: 100px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        flex: 0 0 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+    video {
+        width: 500px;
+        height: 300px;
+    }
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.info {
+    ul, li {
+        list-style: none;
+        padding-bottom: 4px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #BFBEBD;
+    }
+
+    a:hover {
+        color: #4DD0E1;
+    }
+}
+
+form {
+    border: 1px solid #2A2A3A;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #12121C;
+    color: #F2F0EC;
+}
+
+form input, select, textarea {
+    background-color: #1A1A28;
+    color: #F2F0EC;
+}
+
+form button {
+    background-color: #FF5A1F;
+    color: #0A0A0F;
+}
+
+form button:hover {
+    color: #FFFFFF;
+}
+
+form textarea {
+    max-width: 245px;
+    max-height: 30px;
+    min-width: 245px;
+    min-height: 30px;
+}
+
+#contacte {
+    padding-top: 10px;
+}
+
+.boto {
+    padding-top: 10px;
+}
+
+.capçalera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #2A2A3A;
+    margin-bottom: 30px;
+
+
+}
+
+.capçalera a {
+    text-decoration: none;
+    color:#BFBEBD;
+    padding-right: 20px;
+    transition: color 0.2s;
+}
+
+.capçalera a:hover {
+    color: #4DD0E1;
+}
+
+.capçalera ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.capçalera img {
+    width: 50px;
+    height: 50px;
+}

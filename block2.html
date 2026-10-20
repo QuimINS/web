@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "ca">
+    <head>
+        <title>Imagine Dragons</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Official page of Imagine Dragons, where you can listen to our latest track.">
+        <link rel="stylesheet" href="css/estilB2.css">
+    </head>
+    <body>
+        <header class="capçalera">
+            <img src="img/ID.jpeg" alt="Your browser doesn't support this type of images.">
+            <nav>
+                <ul>
+                    <li><a href="index.doctreball.html">Tornar a l'index</a></li>
+                    <li><a href="block2.html">Inici</a></li>
+                    <li><a href="https://shop.imaginedragonsmusic.com/?srsltid=AU7gw4UHjgKWz74UWAVwGMmz2SuyBvqtIFL0xrpoP8WQss2bd7liKvCk">Merchandising</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to the official Imagine Dragons web page.</h1>
+            <p>We are Imagine Dragons, a band located in Las Vegas. Our journey through music<br>
+            has been incredible, sharing love and music with our fans all around the globe.</p>
+            <div class="imatges">
+                <img src="img/Grup1.jpeg" alt="Your browser doesn't support this type of images.">
+                <img src="img/Grup2.jpeg" alt="Your browser doesn't support this type of images.">
+                <img src="img/grup3.jpeg" alt="Your browser doesn't support this type of images.">
+                <img src="img/Grup4.jpeg" alt="Your browser doesn't support this type of images.">
+            </div>
+            <br>
+            <h2>Listen our most listened song</h2>
+            <br>
+            <audio controls>
+                <source src="media/audio/Believer.mp3" type="audio/mp3">
+            </audio>
+            <br>
+            <h2>Watch our most recent performance</h2>
+            <video controls>
+                <source src="media/video/ThunderLive.mp4" type="video/mp4">
+            </video>
+        </main>
+        <div class="info">
+            <h2>Upcoming Tour Dates</h2>
+            <ul>
+                <li>5 de Desembre de 2026 <a href="https://www.ticketmaster.ae/event/imagine-dragons-saturday-tickets/1612820399"> Consegueix els tickets</a></li>                                
+                <li>6 de febrer de 2027 <a href="https://www.ticketmaster.com/event/Z7r9jZ1AAvapv"> Consegueix els tickets</a></li>
+            </ul>
+            <h2>Follow us</h2>
+            <p>Stay updated with our social pages</p>
+            <ul>
+                <li><a href="https://www.instagram.com/imaginedragons">Instagram</a></li>   
+                <li><a href="http://www.youtube.com/@ImagineDragons">YouTube</a></li>
+                <li><a href="https://x.com/#!/imaginedragons">Twitter</a></li>
+            </ul>
+        </div>
+        <h2 id="contacte">Contact Us</h2>        
+        <form action="#" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="nom" required>                
+            <label for="email">Correu:</label>
+            <input type="email" id="email" name="correu" required>
+            <label for="Assumpte">Assumpte:</label>
+            <select id="Assumpte" name="Assumpte">
+                <option value="Empresarial">Empresarial</option>
+                <option value="fan">Fan</option>                </select>
+            <label for="missatge">Missatge:</label>
+            <textarea id="missatge" name="missatge" rows="2" cols="20" required></textarea> 
+            <div class="boto">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
