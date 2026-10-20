@@ -53,6 +53,7 @@ main {
     }
 
     .imatges img {
+        display: flex;
         width: 200px;
         height: 500px;
         object-fit: cover;
@@ -60,7 +61,9 @@ main {
         flex: 0 0 100%;
         object-fit: cover;
         scroll-snap-align: center;
+        padding-bottom: 5px;
     }
+
     video {
         width: 530px;
         height: 230px;
@@ -171,6 +174,7 @@ form textarea {
     max-height: 100px;
     min-width: 500px;
     min-height: 100px;
+    font-size: 17px;
 }
 
 #contacte {
@@ -226,11 +230,14 @@ footer {
 
 input {
     height: 30px;
+    font-size: 17px;
 }
 
 select {
     height: 40px;
+    font-size: 17px;
 }
+
 label {
     text-align: left;
     padding-top: 20px;
