@@ -1,24 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 
-html, body {
-    background-color: #0A0A0F;
+html {
+    background-color: #1b1b20;
+}
+
+body {
     font-family: "EB Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 p, li, label {
     color: #BFBEBD;
 }
 
-h1, h2 {
+h1 {
     color: #F2F0EC;
+    font-size: 50px;
 }
 
+h2 {
+    color: #F2F0EC;
+    font-size: 42px;
+}
 
+p {
+    font-size: 20px;
+}
 
 main {
     audio {
         color-scheme: dark;
+        border-radius: 20px;
+        background-color: #36363e;
+        width: 600px;
+        height: 40px;
     }
 
     .imatges {
@@ -27,40 +48,91 @@ main {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        max-width: 500px;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
     .imatges img {
-        width: 100px;
-        height: 400px;
+        width: 200px;
+        height: 500px;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 30px;
         flex: 0 0 100%;
         object-fit: cover;
         scroll-snap-align: center;
     }
     video {
-        width: 500px;
-        height: 300px;
+        width: 530px;
+        height: 230px;
     }
-    margin: auto;
-    align-content: center;
-    justify-content: center;
 
 }
 
 .info {
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #36363e;
+    width: 550px;
+    height: 430px;
+    margin-top: 30px;
+
     ul, li {
         list-style: none;
+        margin: 0;
+        padding: 0;
         padding-bottom: 4px;
     }
 
-    a {
+    .tickets ul li a {
         text-decoration: none;
         color: #BFBEBD;
+        font-style: italic;
     }
 
-    a:hover {
+    .tickets a:hover {
+        color: #4DD0E1;
+    }
+
+    .xarxes ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .xarxes a {
+        text-decoration: none;
+        color: #BFBEBD;
+        font-style: normal;        
+    }
+
+    .xarxes li::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    .xarxes {
+        .yt::before {
+            background-image: url(../img/yt.png);
+        }
+        .x::before {
+            background-image: url(../img/X.png);
+        }
+        .insta::before {
+            background-image: url(../img/insta.png);
+        }
+    }
+
+    .xarxes a:hover {
         color: #4DD0E1;
     }
 }
@@ -68,34 +140,37 @@ main {
 form {
     border: 1px solid #2A2A3A;
     padding: 20px;
-    border-radius: 5px;
-    width: 250px;
+    border-radius: 15px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background-color: #12121C;
+    background-color: #2a2a2b;
     color: #F2F0EC;
+    font-size: 20px;
 }
 
 form input, select, textarea {
-    background-color: #1A1A28;
+    background-color: #36363e;
     color: #F2F0EC;
 }
 
 form button {
-    background-color: #FF5A1F;
+    background-color: #d1b633;
     color: #0A0A0F;
+    height: 30px;
+    width: 60px;
 }
 
 form button:hover {
-    color: #FFFFFF;
+    color: #0b30e7;
 }
 
 form textarea {
-    max-width: 245px;
-    max-height: 30px;
-    min-width: 245px;
-    min-height: 30px;
+    max-width: 500px;
+    max-height: 100px;
+    min-width: 500px;
+    min-height: 100px;
 }
 
 #contacte {
@@ -111,10 +186,10 @@ form textarea {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    border-bottom: 1px solid #2A2A3A;
+    border-bottom: 2px solid #2A2A3A;
     margin-bottom: 30px;
-
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .capçalera a {
@@ -132,9 +207,19 @@ form textarea {
     list-style: none;
     display: flex;
     gap: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 .capçalera img {
     width: 50px;
     height: 50px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 2px solid #2A2A3A;
+    padding-bottom: 10px;
+    width: 100%;
 }
