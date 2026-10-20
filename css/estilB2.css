@@ -223,3 +223,16 @@ footer {
     padding-bottom: 10px;
     width: 100%;
 }
+
+input {
+    height: 30px;
+}
+
+select {
+    height: 40px;
+}
+label {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
