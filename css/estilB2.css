@@ -50,6 +50,7 @@ main {
         scroll-behavior: smooth;
         max-width: 700px;
         margin: 0 auto;
+        margin-top: 40px;
     }
 
     .imatges img {
@@ -61,14 +62,7 @@ main {
         flex: 0 0 100%;
         object-fit: cover;
         scroll-snap-align: center;
-        padding-bottom: 5px;
     }
-
-    video {
-        width: 530px;
-        height: 230px;
-    }
-
 }
 
 .info {
@@ -242,4 +236,67 @@ label {
     text-align: left;
     padding-top: 20px;
     padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.vidblock {
+    background-color: #36363e;
+    border-radius: 15px;
+    width: 600px;
+    margin: 10px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        }   
+    }
+
+.audblock {
+    padding:20px;
+}
+
+.historia {
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 80px;
+    background-color: #36363e;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.historia p {
+    width: 100%; 
+}
+
+.resumBio {
+    background-color: #36363e;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 700px;
+    padding: 5px;
+}
+
+.resumBio p {
+    width: 100%;
 }
