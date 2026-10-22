@@ -51,18 +51,26 @@
                     la perseverança ens poden ajudar a aconseguir els nostres somnis.
                 </p>
             </div>
-            <div class="audblock">
-                <h2>Escolta Believer, la cançó més escoltada</h2>
-                <audio controls>
-                    <source src="media/audio/Believer.mp3" type="audio/mp3">
-                </audio>
-            </div>
-
-            <h2>Mira la nostra última actuació</h2>
-            <div class="vidblock">
-                <video controls>
-                    <source src="media/video/ThunderLive.mp4" type="video/mp4">
-                </video>
+            <div class="media">
+                <h2>Escolta thunder</h2>
+                <div class="Thunder">
+                    <video controls>
+                        <source src="media/video/ThunderLive.mp4" type="video/mp4">
+                    </video>
+                    <audio controls>
+                        <source src="media/audio/Thunder.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <h2>Escolta Believer</h2>
+                <div class="Believer">
+                    
+                    <video controls>
+                        <source src="media/video/BelieverLive.mp4" type="video/mp4">
+                    </video>
+                    <audio controls>
+                        <source src="media/audio/Believer.mp3" type="audio/mp3">
+                    </audio>
+                </div>
             </div>
         </main>
         <div class="info">
@@ -90,10 +98,15 @@
             <input type="text" id="name" name="nom" required>                
             <label for="email">Correu:</label>
             <input type="email" id="email" name="correu" required>
+            <label for="telefon">Telèfon: (Opcional)</label>
+            <input type="tel" id="telefon" name="telefon">
             <label for="Assumpte">Assumpte:</label>
             <select id="Assumpte" name="Assumpte">
-                <option value="Empresarial">Empresarial</option>
-                <option value="fan">Fan</option>                </select>
+                <option value="Opcio">--- Tria una opcio ---</option>
+                <option value="Empresarial">Contractació</option>
+                <option value="fan">Missatge de fan</option>
+                <option value="altres">Altres opcions</option>
+            </select>
             <label for="missatge">Missatge:</label>
             <textarea id="missatge" name="missatge" rows="2" cols="20" required></textarea> 
             <div class="boto">

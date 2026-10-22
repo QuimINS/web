@@ -34,18 +34,6 @@ p {
 }
 
 main {
- 
-    .audblock {
-       padding:20px;
-    }
-
-    .audblock audio {
-        color-scheme: dark;
-        border-radius: 20px;
-        width: 600px;
-        height: 40px;
-    }
-
     .imatges {
         display: flex;
         gap: 20px;
@@ -155,17 +143,27 @@ form {
 form input, select, textarea {
     background-color: #36363e;
     color: #F2F0EC;
+    border-radius: 10px;
+}
+.boto {
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
 }
 
 form button {
-    background-color: #d1b633;
-    color: #0A0A0F;
-    height: 30px;
-    width: 60px;
+    background-color: #2a2a2b;
+    border-color: #4DD0E1;
+    color: #4DD0E1;
+    height: 40px;
+    width: 70px;
+    border-radius:30px;
 }
 
 form button:hover {
-    color: #0b30e7;
+    background-color: #4DD0E1;
+    color: #2a2a2b;
 }
 
 form textarea {
@@ -266,7 +264,7 @@ label {
     background: #aaa;
 }
 
-.vidblock {
+.Thunder {
     background-color: #36363e;
     border-radius: 15px;
     width: 600px;
@@ -280,8 +278,31 @@ label {
         height: auto;
         border-radius: 10px;
         display: block;
-        }   
-    }
+        }
+    audio {
+        color-scheme: dark;
+    }   
+}
+
+.Believer {
+    background-color: #36363e;
+    border-radius: 15px;
+    width: 600px;
+    margin: 10px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        }
+    audio {
+        color-scheme: dark;
+    }   
+}
 
 .historia {
     margin: 0 auto;
@@ -289,6 +310,7 @@ label {
     background-color: #36363e;
     border-radius: 15px;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 .historia p {

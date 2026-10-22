@@ -1,7 +1,164 @@
-body {
-    background-color: #95A8C7;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+    background-color: #1b1b20;
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+
+body {
+    font-family: "EB Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+}
+
+p, li, td, th, blockquote {
+    color: #BFBEBD;
+}
+
+h1 {
+    color: #F2F0EC;
+    font-size: 50px;
+}
+
+h2 {
+    color: #F2F0EC;
+    font-size: 42px;
+}
+
+h3 {
+    color: #F2F0EC;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+blockquote {
+    background-color: #36363e;
+    border-radius: 15px;
+    width: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 10px 0;
+}
+
+strong {
+    color: #F2F0EC;
+}
+
+em {
+    color: #F2F0EC;
+}
+
+ol, ul {
+    background-color: #36363e;
+    border-radius: 15px;
+    width: 550px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 20px 20px 50px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    padding-bottom: 4px;
+}
+
+table {
+    background-color: #36363e;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 600px;
+    max-width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+th {
+    color: #F2F0EC;
+    background-color: #2a2a2b;
+    padding: 12px;
+}
+
+td {
+    padding: 10px 12px;
+    border-top: 1px solid #2A2A3A;
+}
+
+.TomYum {
+    width: 900px;
+}
+
+.capçalera {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #2A2A3A;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #1b1b20;
+    isolation: isolate;
+}
+
+.capçalera a {
+    text-decoration: none;
+    color: #BFBEBD;
+    padding-right: 20px;
+    transition: color 0.2s;
+}
+
+.capçalera a:hover {
+    color: #4DD0E1;
+}
+
+.capçalera ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    width: auto;
+    max-width: none;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 2px solid #2A2A3A;
+    padding-bottom: 10px;
+    width: 100%;
 }
